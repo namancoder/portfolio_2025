@@ -68,10 +68,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -165,4 +162,21 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.themeLight {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.themeDark {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.themeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
