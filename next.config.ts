@@ -2,18 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // basePath: "/abcd",
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: "img-src 'self' data:;",
-          },
-        ],
-      },
-    ];
+  images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 };
 
