@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+// const isProd = process.env.NODE_ENV === "production";
 const repoName = "portfolio_2025";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  basePath: isProd ? `/${repoName}` : "", // Replace with your repo name
-  assetPrefix: isProd ? `/${repoName}/` : "",
+  basePath: `/${repoName}/`, // Replace with your actual repo name
+  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true, // Required for GitHub Pages
   },
